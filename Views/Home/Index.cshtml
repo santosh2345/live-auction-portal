@@ -1,10 +1,20 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4 text-red-700">what is happening? </h1>
-    <h1 class="display-4 text-red-700">everything should be fine now </h1>
 
-    <p class="text-red-500">Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+<section class="content grid grid-cols-3 gap-8 p-16">
+
+    @for (int i = 0; i < 12; ++i)
+    {
+        <section class="item-container flex flex-col gap-3 p-4 bg-white rounded-lg shadow-md ">
+            <img src="https://picsum.photos/300/300" alt="Item Image" class="rounded-lg hover:grayscale-0">
+            <h2 class="text-lg font-semibold mt-4">Item @i</h2>
+            <h5 class="text-gray-500">Price: $@(i*9999+1%3202)</h5>
+            <h6>This is a very important item here on this auction platform</h6>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md mt-4 hover:bg-blue-400">Bid</button>
+        </section>
+    }
+
+</section>
