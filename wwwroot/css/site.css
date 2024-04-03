@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
 html {
   font-size: 14px;
 }
+
+body{
+  font-family: "Rubik" , sans-serif;
+  font-weight: 500;
+}
+
+
 
 @media (min-width: 768px) {
   html {
