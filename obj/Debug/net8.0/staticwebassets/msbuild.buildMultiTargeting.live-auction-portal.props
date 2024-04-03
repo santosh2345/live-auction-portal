@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/live-auction-portal.props" />
+</Project>
