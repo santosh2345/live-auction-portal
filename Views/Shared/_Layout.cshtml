@@ -10,22 +10,24 @@
     <link rel="stylesheet" href="~/live_auction_portal.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
+    <header class="">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand text-red-700" asp-area="" asp-controller="Home" asp-action="Index">live_auction_portal</a>
+            <div class="container-fluid w-5/6 p-2 ">
+                <a class="navbar-brand text-red-600 " asp-area="" asp-controller="Home" asp-action="Index"><span class="text-3xl text-blue-500">Spar Auction </span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class=" d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav  flex flex-row gap-8">
                         <li class="nav-item">
-                            <a class="nav-link text-dark text-red-600" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Login</a>
                         </li>
+                        
+                        <button class="nav-link text-white rounded-md bg-blue-500 hover:bg-blue-600 transition-all p-2 pr-3 pl-3 font-bold  " asp-area="" asp-controller="Home" asp-action="Privacy">Create Account</button>
                     </ul>
                 </div>
             </div>
