@@ -1,20 +1,49 @@
-﻿@{
-ViewData["Title"] = "Home Page";
-}
+﻿@{ ViewData["Title"] = "Home Page"; }
+
+<section class="content">
+  <div class="p-2 shadow-sm flex flex-row justify-content-around align-items-center">
+    <div>
+      <img
+        src="https://picsum.photos/300/300"
+        alt="Item Image"
+        class="rounded-lg hover:grayscale-0"
+      />
+    </div>
+    <div class="flex flex-col gap-3">
+        <h1 class="fs-1 font-semibold">Welcome to the SPAR<br> Auction Portal</h1>
+        <p class="text-gray-500">
+          This is a platform where you can bid for items and win them at the end of
+          the auction
+        </p>
+        <div class="flex flex-row gap-5">
+
+            <button class=" text-white rounded-md bg-blue-500 hover:bg-blue-600 transition-all p-2 pr-3 pl-3 font-bold ">PLACE A BID</button>
+            <button class=" text-dark  rounded-md border  border-black  hover:bg-blue-500 hover:text-white transition-all p-2 pr-4 pl-4 font-bold ">PLACE AN ITEM</button>
+        </div>
 
 
-
-<section class="content grid grid-cols-3 gap-8 p-16">
-
-    @for (int i = 0; i < 12; ++i)
-    {
-        <section class="item-container flex flex-col gap-3 p-4 bg-white rounded-lg shadow-md ">
-            <img src="https://picsum.photos/300/300" alt="Item Image" class="rounded-lg hover:grayscale-0">
-            <h2 class="text-lg font-semibold mt-4">Item @i</h2>
-            <h5 class="text-gray-500">Price: $@(i*9999+1%3202)</h5>
-            <h6>This is a very important item here on this auction platform</h6>
-            <button class="bg-blue-500 text-white px-4 py-2 rounded-md mt-4 hover:bg-blue-400">Bid</button>
-        </section>
+    </div>
+   
+  </div>
+  <section class="grid grid-cols-3 gap-8 mt-5">
+    @for (int i = 0; i < 12; ++i) {
+    <section
+      class="item-container flex flex-col gap-3 p-4 bg-white rounded-lg shadow-md"
+    >
+      <img
+        src="https://picsum.photos/300/300"
+        alt="Item Image"
+        class="rounded-lg hover:grayscale-0"
+      />
+      <h2 class="text-lg font-semibold mt-4">Item @i</h2>
+      <h5 class="text-gray-500">Price: $@(i*9999+1%3202)</h5>
+      <h6>This is a very important item here on this auction platform</h6>
+      <button
+        class="bg-blue-500 text-white px-4 py-2 rounded-md mt-4 hover:bg-blue-400"
+      >
+        Bid
+      </button>
+    </section>
     }
-
+  </section>
 </section>
