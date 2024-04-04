@@ -5,6 +5,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 
 html {
@@ -35,4 +36,10 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+
+.social-icon:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
 }
