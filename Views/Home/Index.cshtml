@@ -1,7 +1,7 @@
 ﻿@{ ViewData["Title"] = "Home Page"; }
 
 <section class="content">
-  <div class="p-2 shadow-sm flex flex-row justify-content-around align-items-center">
+  <div class="p-5 shadow-sm flex flex-row justify-content-around align-items-center">
     <div>
       <img
         src="https://picsum.photos/300/300"
@@ -25,7 +25,16 @@
     </div>
    
   </div>
-  <section class="grid grid-cols-3 gap-8 mt-5">
+  <section class=" mt-5 text-center flex flex-col items-center justify-content-center">
+    <div class="flex justify-content-center">
+
+        <h1 class="fs-2 font-semibold  text-center border-bottom mb-5 w-25 pb-3  ">Latest Auction</h1>
+    </div>
+   
+    <div class="grid grid-cols-3 gap-8 mt-3">
+
+   
+
     @for (int i = 0; i < 12; ++i) {
     <section
       class="item-container flex flex-col gap-3 p-4 bg-white rounded-lg shadow-md"
@@ -45,5 +54,7 @@
       </button>
     </section>
     }
+</div>
   </section>
+
 </section>
