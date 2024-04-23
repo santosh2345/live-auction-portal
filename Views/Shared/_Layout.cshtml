@@ -1,57 +1,92 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPAR Auction - Live Auction Portal</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
-</head>
-<body>
+  </head>
+  <body class="m-0 p-0">
     <header class="">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light shadow-md bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid w-5/6 p-2 ">
-                <a class="navbar-brand text-red-600 " asp-area="" asp-controller="Home" asp-action="Index"><span class="text-3xl text-blue-500">SPAR <span class="fw-light">Auction</span> </span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class=" d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav  flex flex-row gap-8">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Login</a>
-                        </li>
-                        
-                        <button class="nav-link text-white rounded-md bg-blue-500 hover:bg-blue-600 transition-all p-2 pr-3 pl-3 font-bold  " asp-area="" asp-controller="Home" asp-action="Privacy">Create Account</button>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav
+        class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light shadow-md bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid w-5/6 p-2">
+          <a
+            class="navbar-brand text-red-600"
+            asp-area=""
+            asp-controller="Home"
+            asp-action="Index"
+            ><span class="text-3xl text-blue-500"
+              >SPAR <span class="fw-light">Auction</span>
+            </span></a  >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target=".navbar-collapse"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"  >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex flex-row gap-8">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark"
+                  asp-area=""
+                  asp-controller="Home"
+                  asp-action="Index"
+                  >Home</a    >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark"
+                  asp-area=""
+                  asp-controller="Home"
+                  asp-action="Privacy"
+                  >Login</a >
+              </li>
+
+              <button
+                class="nav-link text-white rounded-md bg-blue-500 hover:bg-blue-600 transition-all p-2 pr-3 pl-3 font-bold"
+                asp-area=""
+                asp-controller="Home"
+                asp-action="Privacy"
+              >
+                Create Account
+              </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+      <main role="main" class="pb-3">@RenderBody()</main>
     </div>
 
-    <footer class="border-top footer text-muted container-fluid  bg-black ">
-        <div class="flex flex-col items-center w-5/6 ">
-
-         <a class="navbar-brand text-red-600 " asp-area="" asp-controller="Home" asp-action="Index"><span class="text-3xl text-blue-500">SPAR <span class="fw-light">Auction</span> </span></a>
-         <a class="navbar-brand text-red-600 " asp-area="" asp-controller="Home" asp-action="Index"><span class="text-3xl text-blue-500">SPAR <span class="fw-light">Auction</span> </span></a>
-
-
-
-           
-        </div>
+    <footer
+      class="border-top footer text-muted  bg-black flex items-center  justify-center"
+    >
+      <div class="flex flex-col items-center w-5/6 self-center mx-auto gap-5 p-5">
+        <a
+          class="navbar-brand text-red-600"
+          asp-area=""
+          asp-controller="Home"
+          asp-action="Index"
+          ><span class="text-3xl text-blue-500"
+            >SPAR <span class="fw-light">Auction</span>
+          </span></a>
+        
+          <span class="font-sm">Copyright &copy; 2024 - SPAR Auction All rights reserved</span>
+        
+      </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
-</body>
+  </body>
 </html>
